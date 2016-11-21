@@ -1,7 +1,7 @@
 Summary: Image viewer, editor, organizer
 Name: gthumb
 Version: 3.2.4
-Release: 1%{?dist}
+Release: 2%{?dist}
 URL: https://wiki.gnome.org/Apps/gthumb
 Source0: http://download.gnome.org/sources/gthumb/3.2/%{name}-%{version}.tar.xz
 # Change default parameters for image resizing to better values
@@ -118,6 +118,9 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor >&/dev/null || :
 %{_datadir}/aclocal/*
 
 %changelog
+* Sun Nov 20 2016 Ricardo Arguello <rarguello@deskosproject.org> - 3.2.4-2
+- Rebuilt for DeskOS
+
 * Tue Oct 15 2013 Christian Krause <chkr@fedoraproject.org> - 3.2.4-1
 - New upstream release 3.2.4 (rhbz#1019097, rhbz#1018895)
 - Drop upstreamed patches
